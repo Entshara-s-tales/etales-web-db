@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<body>
+  <div>
+    <button
+      class="text-black rounded"
+      type="button"
+    >
+      Test content
+    </button>
+  </div>
+</body>
+`;
+
+exports[`should render with missing content 1`] = `
+<body>
+  <div>
+    <button
+      class="text-black rounded"
+      type="button"
+    >
+      Missing content
+    </button>
+  </div>
+</body>
+`;
