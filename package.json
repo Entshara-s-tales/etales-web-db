@@ -12,7 +12,8 @@
     "test:watch": "npm test -- --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "prettier --check . && eslint ."
+    "lint": "prettier --check . && eslint .",
+    "cry": "cry"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -67,7 +68,10 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,css,md}": ["eslint", "prettier --write"]
+    "*.{ts,tsx,css,md}": [
+      "eslint",
+      "prettier --write"
+    ]
   },
   "dependencies": {},
   "jest": {
