@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Unit } from "../db/units";
-	import { slide } from "svelte/transition";
-	import { quintOut } from "svelte/easing";
-	import Button from "./Button.svelte";
+	import type { Unit } from '../../db/units';
+	import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
+	import Button from '../Button.svelte';
 
 	export let unit: Unit;
 	$: table = false;
