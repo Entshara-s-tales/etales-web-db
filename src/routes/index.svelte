@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Card from "$lib/components/Card.svelte";
-	import { MockUnits } from "../lib/db/units";
+	import Card from '$lib/components/Card/Card.svelte';
+	import { MockUnits } from '../lib/db/units';
 </script>
 
 <main class="container mx-auto px-20">
@@ -13,7 +13,7 @@
 
 <style style lang="postcss">
 	:root {
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-			Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+			'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 </style>
