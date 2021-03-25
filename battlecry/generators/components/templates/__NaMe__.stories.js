@@ -13,6 +13,5 @@ const Template = ({ onClick, ...args }) => ({
 
 export const __NaMe__ = Template.bind({});
 __NaMe__.args = {
-  primary: true,
   label: '__NaMe__',
 };
