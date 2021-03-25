@@ -40,3 +40,15 @@ By default, `npm run build` will generate a Node app that you can run with `node
 - ...more soon
 
 [See the adapter documentation for more detail](https://kit.svelte.dev/docs#adapters)
+
+## Component generation
+
+This repository uses `battlecry` to generate components. To use it type `npx battlecry g component YourComponentName` or `npm run cry g component YourComponentName` to generate component with directory of `src/lib/components/YourComponentName` and all necessary files:
+
+```plaintext
+YourComponentName.svelte
+YourComponentName.test.ts
+YourComponentName.stories.js
+```
+
+If you want to pass additional path, for instances `primitives`, to have your component generated at `src/lib/components/primitives/YourComponentName` instead, just pass `-p pathname` to the generator like so: `npx battlecry g component -p primitives YourComponentName` The directories will be automatically generated along with all files.
