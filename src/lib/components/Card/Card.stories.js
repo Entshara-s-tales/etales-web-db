@@ -2,7 +2,7 @@ import { MockUnits } from '$lib/db/units';
 import Card from './Card.svelte';
 
 export default {
-  title: 'Example/Card',
+  title: 'lib/components/Card',
   component: Card,
 };
 
@@ -11,8 +11,8 @@ const Template = ({ onClick, ...args }) => ({
   props: args,
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const SampleUsage = Template.bind({});
+SampleUsage.args = {
   label: 'Card',
   unit: MockUnits[0]
 };

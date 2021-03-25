@@ -11,7 +11,7 @@ const Template = ({ onClick, ...args }) => ({
   props: args,
 });
 
-export const __NaMe__ = Template.bind({});
-__NaMe__.args = {
+export const SampleUsage_ = Template.bind({});
+SampleUsage.args = {
   label: '__NaMe__',
 };
