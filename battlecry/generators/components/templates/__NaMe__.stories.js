@@ -1,7 +1,7 @@
 import __NaMe__ from './__NaMe__.svelte';
 
 export default {
-  title: 'Example/__NaMe__',
+  title: 'lib/components/__NaMe__',
   component: __NaMe__,
   argTypes: {},
 };
@@ -11,8 +11,8 @@ const Template = ({ onClick, ...args }) => ({
   props: args,
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const __NaMe__ = Template.bind({});
+__NaMe__.args = {
   primary: true,
   label: '__NaMe__',
 };
