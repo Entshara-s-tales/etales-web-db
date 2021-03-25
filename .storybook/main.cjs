@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -18,5 +20,6 @@ module.exports = {
   ],
   "svelteOptions": {
     "preprocess": require("svelte-preprocess")()
-  }
+  },
+  "presets": [path.resolve(__dirname, './svelte-preset.cjs')],
 }
