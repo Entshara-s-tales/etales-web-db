@@ -1,5 +1,5 @@
-import { MockItems } from "./items";
-import type { Item } from "./items";
+import { MockItems } from './items';
+import type { Item } from './items';
 
 export interface DropTable {
 	item: Item;
@@ -17,7 +17,7 @@ export interface Unit {
 	dropTable: DropTable[];
 }
 
-const MockDropTable = [
+export const MockDropTable = [
 	{
 		item: MockItems[0],
 		dropRate: 0.1,
@@ -34,31 +34,31 @@ const MockDropTable = [
 
 export const MockUnits: Unit[] = [
 	{
-		name: "Spider pig",
+		name: 'Spider pig',
 		id: 0,
 		level: 54,
 		dropTable: MockDropTable,
 	},
 	{
-		name: "Baby Bear",
+		name: 'Baby Bear',
 		id: 64,
 		level: 2,
 		dropTable: MockDropTable,
 	},
 	{
-		name: "Murloc Tiderunner",
+		name: 'Murloc Tiderunner',
 		id: 93,
 		level: 8,
 		dropTable: MockDropTable,
 	},
 	{
-		name: "Murloc Tiderunner Murloc Tiderunner",
+		name: 'Murloc Tiderunner Murloc Tiderunner',
 		id: 93,
 		level: 8,
 		dropTable: MockDropTable,
 	},
 	{
-		name: "Murloc Tiderunner Murloc Tiderunner Murloc Tiderunner",
+		name: 'Murloc Tiderunner Murloc Tiderunner Murloc Tiderunner',
 		id: 93,
 		level: 8,
 		dropTable: MockDropTable,

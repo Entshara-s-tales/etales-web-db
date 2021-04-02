@@ -8,10 +8,12 @@ export default {
 
 const Template = ({ onClick, ...args }) => ({
   Component: Button,
-  props: args,
+  props: {
+    ...args,
+  },
 });
 
-export const SampleUsage_ = Template.bind({});
+export const SampleUsage = Template.bind({});
 SampleUsage.args = {
   label: 'Button',
 };
