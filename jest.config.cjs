@@ -5,6 +5,11 @@ const tsconfig = require('./tsconfig.json')
 
 
 const tsPaths = pathsToModuleNameMapper(tsconfig.compilerOptions.paths, { prefix: '<rootDir>/' })
+delete tsPaths["^\\$app/(.*)$"]
+
+// const ignoreModules = [
+//   "svelte-awesome",
+// ].join("|")
 
 module.exports = {
   "transform": {
@@ -15,9 +20,10 @@ module.exports = {
       }
     ],
     "^.+\\.js$": "babel-jest",
-    "^.+\\.ts$": "ts-jest"
+    "^.+\\.ts$": "ts-jest",
   },
   "moduleFileExtensions": [
+    "cjs",
     "js",
     "ts",
     "svelte"
@@ -26,7 +32,16 @@ module.exports = {
     "@testing-library/jest-dom/extend-expect"
   ],
   "modulePathIgnorePatterns": [
-    ".history"
+    ".history",
+    "battlecry"
   ],
-  moduleNameMapper: tsPaths
+  moduleNameMapper: {
+    ...tsPaths,
+    "svelte-awesome": "<rootDir>/__mocks__/svelte-awesome/Icon.svelte",
+    /**
+     * Just adding "svelte-awesome/icons": "identity-object-proxy" didn't make it.
+     * It's something between automocking and module resolving. Weird, but this way it works.
+     */
+  },
+  // transformIgnorePatterns: [`/node_modules/(?!(${ ignoreModules }))`]
 }
