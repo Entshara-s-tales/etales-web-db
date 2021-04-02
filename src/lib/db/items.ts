@@ -5,7 +5,7 @@
 export type ItemType = string;
 
 // This isn't probably right though.
-export type ItemState = "passive";
+export type ItemState = 'passive';
 
 export interface Item {
 	name: string;
@@ -16,20 +16,20 @@ export interface Item {
 
 export const MockItems: Item[] = [
 	{
-		name: "Potato dress",
-		type: "Dress",
-		state: "passive",
-		description: "This item has a very calm aura",
+		name: 'Potato dress',
+		type: 'Dress',
+		state: 'passive',
+		description: 'This item has a very calm aura',
 	},
 	{
-		name: "cat",
-		type: "Miscelaneous",
-		state: "passive",
+		name: 'cat',
+		type: 'Miscelaneous',
+		state: 'passive',
 	},
 	{
-		name: "dog",
-		type: "Miscelaneous",
-		state: "passive",
-		description: "It definitely is not a cat!",
+		name: 'dog',
+		type: 'Miscelaneous',
+		state: 'passive',
+		description: 'It definitely is not a cat!',
 	},
 ];

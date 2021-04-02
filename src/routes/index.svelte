@@ -4,7 +4,7 @@
 </script>
 
 <main class="container mx-auto px-20">
-	<div class="grid md:grid-cols-3 gap-12">
+	<div class="grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-12">
 		{#each MockUnits as unit}
 			<Card {unit} />
 		{/each}
