@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropTable/> matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="mt-10 absolute left-0 top-0 shadow p-2"
+    >
+      <p>
+        Item: 
+        Potato dress
+      </p>
+       
+      <p>
+        Type: 
+        Dress
+      </p>
+       
+      <p>
+        State: 
+        passive
+      </p>
+       
+      <p>
+        DropRate: 
+        10
+      </p>
+      <p>
+        Item: 
+        cat
+      </p>
+       
+      <p>
+        Type: 
+        Miscelaneous
+      </p>
+       
+      <p>
+        State: 
+        passive
+      </p>
+       
+      <p>
+        DropRate: 
+        0.1
+      </p>
+      <p>
+        Item: 
+        dog
+      </p>
+       
+      <p>
+        Type: 
+        Miscelaneous
+      </p>
+       
+      <p>
+        State: 
+        passive
+      </p>
+       
+      <p>
+        DropRate: 
+        80
+      </p>
+    </div>
+  </div>
+</body>
+`;

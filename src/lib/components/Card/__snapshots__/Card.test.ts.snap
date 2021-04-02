@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card/> matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="grid grid-cols-min shadow p-2 m-4"
+    >
+      <a
+        class="grid grid-cols-2"
+        href="/#"
+      >
+        <div>
+          <h3
+            class="text-black"
+          >
+            Spider pig
+          </h3>
+           
+          <span
+            class=""
+          >
+            Level: 
+            54
+          </span>
+        </div>
+         
+        <img
+          alt=""
+          src="https://placekitten.com/40/40"
+        />
+      </a>
+       
+      <div
+        class="relative"
+      >
+        <button
+          class="text-black rounded"
+          type="button"
+        >
+          <span>
+            Drop table
+          </span>
+        </button>
+         
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
