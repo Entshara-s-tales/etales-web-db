@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { Unit } from '../../db/units';
-	import { slide } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+
 	import Button from '../Button.svelte';
+	import DropTable from '../DropTable/DropTable.svelte';
 
 	export let unit: Unit;
 	$: table = false;
@@ -23,17 +23,10 @@
 			</div>
 			<img src="https://placekitten.com/40/40" alt="" />
 		</a>
-		<div class="">
+		<div class="relative">
 			<Button><span on:click={openTable}>Drop table</span></Button>
 			{#if table}
-				<div transition:slide={{ delay: 100, duration: 300, easing: quintOut }}>
-					{#each unit.dropTable as itemDrop}
-						<p>Item: {itemDrop.item.name}</p>
-						<p>Type: {itemDrop.item.type}</p>
-						<p>State: {itemDrop.item.state}</p>
-						<p>DropRate: {itemDrop.dropRate * 100}</p>
-					{/each}
-				</div>
+				<DropTable {unit} />
 			{/if}
 		</div>
 	</div>
