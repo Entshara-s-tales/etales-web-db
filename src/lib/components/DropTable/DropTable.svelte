@@ -4,8 +4,6 @@
 	import Icon from 'svelte-awesome';
 	import { times } from 'svelte-awesome/icons';
 
-	import Button from '$lib/components/Button/Button.svelte';
-
 	import type { Unit } from '$lib/db/units';
 
 	export let unit: Unit;
@@ -13,14 +11,17 @@
 </script>
 
 <div class="w-full">
-	<div class="absolute right-0 top-0 ">
-		<Button onClick={onClose}>
-			<Icon class="w-10 h-10" data={times} />
-		</Button>
+	<div class="absolute right-0 top-0">
+		<button on:click={onClose} type="button">
+			<Icon
+				class="w-10 h-10 transform hover:rotate-45 transition-transform fill-current hover:text-gray-700"
+				data={times}
+			/>
+		</button>
 	</div>
-	<h3 class="text-center pr-10 pl-2 pt-2 pb-2">{unit.name}</h3>
+	<h3 class="text-center pr-8 pl-2 pt-2 pb-2">{unit.name}</h3>
 	{#each unit.dropTable as itemDrop, i}
-		<div class="mb-4 p-4 leading-snug">
+		<div class="mb-4 p-2 leading-snug">
 			<img class="m-auto pb-4" src="https://placekitten.com/80/80" alt="" />
 			<p class="-mt-3 text-center">{capitalize(itemDrop.item.name)}</p>
 			<p class="">Type: {capitalize(itemDrop.item.type)}</p>

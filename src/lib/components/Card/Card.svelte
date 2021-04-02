@@ -18,9 +18,9 @@
 <!-- NOTE: This should not be necessary, seems like a bug in SvelteKit trying to render elements on server even without them being used -->
 {#if unit}
 	<div class="grid grid-cols-min shadow p-2 m-4 relative">
-		<a class="grid grid-cols-2" href="/#">
+		<a class="grid grid-cols-2 " href="/#">
 			<div>
-				<h3 class="text-black">{unit.name}</h3>
+				<h3 class="">{unit.name}</h3>
 				<span class="">Level: {unit.level}</span>
 			</div>
 			<img src="https://placekitten.com/256/256" alt="" />

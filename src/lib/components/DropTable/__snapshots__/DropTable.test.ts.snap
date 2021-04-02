@@ -28,13 +28,13 @@ exports[`<DropTable/> matches snapshot 1`] = `
       </div>
        
       <h3
-        class="text-center pr-10 pl-2 pt-2 pb-2"
+        class="text-center pr-8 pl-2 pt-2 pb-2"
       >
         Spider pig
       </h3>
        
       <div
-        class="mb-4 p-4 leading-snug"
+        class="mb-4 p-2 leading-snug"
       >
         <img
           alt=""
@@ -76,7 +76,7 @@ exports[`<DropTable/> matches snapshot 1`] = `
       />
       
       <div
-        class="mb-4 p-4 leading-snug"
+        class="mb-4 p-2 leading-snug"
       >
         <img
           alt=""
@@ -118,7 +118,7 @@ exports[`<DropTable/> matches snapshot 1`] = `
       />
       
       <div
-        class="mb-4 p-4 leading-snug"
+        class="mb-4 p-2 leading-snug"
       >
         <img
           alt=""
