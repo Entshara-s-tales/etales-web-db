@@ -4,7 +4,7 @@ exports[`<Card/> matches snapshot 1`] = `
 <body>
   <div>
     <div
-      class="grid grid-cols-min shadow p-2 m-4"
+      class="grid grid-cols-min shadow p-2 m-4 relative"
     >
       <a
         class="grid grid-cols-2"
@@ -27,23 +27,25 @@ exports[`<Card/> matches snapshot 1`] = `
          
         <img
           alt=""
-          src="https://placekitten.com/40/40"
+          src="https://placekitten.com/256/256"
         />
       </a>
        
       <div
         class="relative"
       >
-        <button
-          class="text-black rounded"
-          type="button"
+        <div
+          class="mt-4 self-end place-self-center text-center"
         >
-          <span>
+          <button
+            class="text-black rounded"
+            type="button"
+          >
             Drop table
-          </span>
-        </button>
-         
+          </button>
+        </div>
       </div>
+       
     </div>
     
   </div>

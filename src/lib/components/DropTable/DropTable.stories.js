@@ -1,4 +1,4 @@
-import { MockDropTable } from '$lib/db/units';
+import { MockUnits } from '$lib/db/units';
 import DropTable from './DropTable.svelte';
 
 export default {
@@ -10,7 +10,6 @@ export default {
 const Template = ({ onClick, ...args }) => ({
   Component: DropTable,
   props: {
-    dropTable: MockDropTable,
     ...args,
   },
 });
@@ -18,4 +17,5 @@ const Template = ({ onClick, ...args }) => ({
 export const SampleUsage = Template.bind({});
 SampleUsage.args = {
   label: 'DropTable',
+  unit: MockUnits[0],
 };

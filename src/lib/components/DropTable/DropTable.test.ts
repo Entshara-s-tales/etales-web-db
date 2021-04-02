@@ -1,12 +1,12 @@
 import { render } from '@testing-library/svelte';
 import DropTable from './DropTable.svelte';
 
-import { MockDropTable } from '$lib/db/units';
+import { MockUnits } from '$lib/db/units';
 
 describe('<DropTable/>', () => {
 	it('matches snapshot', () => {
 		const results = render(DropTable, {
-			dropTable: MockDropTable,
+			unit: MockUnits[0],
 		});
 		expect(results.container).toMatchSnapshot();
 	});

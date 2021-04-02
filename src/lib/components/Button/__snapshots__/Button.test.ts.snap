@@ -3,7 +3,12 @@
 exports[`<Button/> matches snapshot 1`] = `
 <body>
   <div>
-    <div />
+    <button
+      class="text-black rounded"
+      type="button"
+    >
+      Missing content
+    </button>
   </div>
 </body>
 `;

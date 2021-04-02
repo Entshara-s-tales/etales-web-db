@@ -4,65 +4,160 @@ exports[`<DropTable/> matches snapshot 1`] = `
 <body>
   <div>
     <div
-      class="mt-10 absolute left-0 top-0 shadow p-2"
+      class="w-full"
     >
-      <p>
-        Item: 
-        Potato dress
-      </p>
+      <div
+        class="absolute right-0 top-0 "
+      >
+        <button
+          class="text-black rounded"
+          type="button"
+        >
+          <div
+            class="w-10 h-10"
+            inverse="false"
+            pulse="false"
+            spin="false"
+          >
+            <i
+              classname="fa fa-times"
+            />
+          </div>
+        </button>
+      </div>
        
-      <p>
-        Type: 
-        Dress
-      </p>
+      <h3
+        class="text-center pr-10 pl-2 pt-2 pb-2"
+      >
+        Spider pig
+      </h3>
        
-      <p>
-        State: 
-        passive
-      </p>
+      <div
+        class="mb-4 p-2 leading-snug"
+      >
+        <img
+          alt=""
+          class="m-auto pb-4"
+          src="https://placekitten.com/80/80"
+        />
+         
+        <p
+          class=""
+        >
+          Name: 
+          Potato dress
+        </p>
+         
+        <p
+          class=""
+        >
+          Type: 
+          Dress
+        </p>
+         
+        <p
+          class=""
+        >
+          State: 
+          Passive
+        </p>
+         
+        <p
+          class=""
+        >
+          Drop chance: 
+          10
+          %
+        </p>
+      </div>
        
-      <p>
-        DropRate: 
-        10
-      </p>
-      <p>
-        Item: 
-        cat
-      </p>
+      <hr
+        class="w-10/12 p-4 m-auto border-gray-200"
+      />
+      
+      <div
+        class="mb-4 p-2 leading-snug"
+      >
+        <img
+          alt=""
+          class="m-auto pb-4"
+          src="https://placekitten.com/80/80"
+        />
+         
+        <p
+          class=""
+        >
+          Name: 
+          Cat
+        </p>
+         
+        <p
+          class=""
+        >
+          Type: 
+          Miscelaneous
+        </p>
+         
+        <p
+          class=""
+        >
+          State: 
+          Passive
+        </p>
+         
+        <p
+          class=""
+        >
+          Drop chance: 
+          0.1
+          %
+        </p>
+      </div>
        
-      <p>
-        Type: 
-        Miscelaneous
-      </p>
+      <hr
+        class="w-10/12 p-4 m-auto border-gray-200"
+      />
+      
+      <div
+        class="mb-4 p-2 leading-snug"
+      >
+        <img
+          alt=""
+          class="m-auto pb-4"
+          src="https://placekitten.com/80/80"
+        />
+         
+        <p
+          class=""
+        >
+          Name: 
+          Dog
+        </p>
+         
+        <p
+          class=""
+        >
+          Type: 
+          Miscelaneous
+        </p>
+         
+        <p
+          class=""
+        >
+          State: 
+          Passive
+        </p>
+         
+        <p
+          class=""
+        >
+          Drop chance: 
+          80
+          %
+        </p>
+      </div>
        
-      <p>
-        State: 
-        passive
-      </p>
-       
-      <p>
-        DropRate: 
-        0.1
-      </p>
-      <p>
-        Item: 
-        dog
-      </p>
-       
-      <p>
-        Type: 
-        Miscelaneous
-      </p>
-       
-      <p>
-        State: 
-        passive
-      </p>
-       
-      <p>
-        DropRate: 
-        80
-      </p>
+      
     </div>
   </div>
 </body>

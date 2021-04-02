@@ -75,5 +75,8 @@
       "prettier --write"
     ]
   },
+  "dependencies": {
+    "lodash": "^4.17.21",
     "svelte-awesome": "^2.3.1"
+  }
 }
