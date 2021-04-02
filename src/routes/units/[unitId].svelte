@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { MockUnits } from "../../lib/db/units";
-	import type { Unit } from "../../lib/db/units";
+	import { MockUnits } from '$lib/db/units';
 
 	export let unitId: number;
 	const unit = MockUnits.find((x) => x.id === unitId);
