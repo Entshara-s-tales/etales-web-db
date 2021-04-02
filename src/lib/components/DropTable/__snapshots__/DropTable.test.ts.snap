@@ -20,8 +20,9 @@ exports[`<DropTable/> matches snapshot 1`] = `
             spin="false"
           >
             <i
-              classname="fa fa-times"
+              class="fa fa-times"
             />
+             
           </div>
         </button>
       </div>
@@ -33,7 +34,7 @@ exports[`<DropTable/> matches snapshot 1`] = `
       </h3>
        
       <div
-        class="mb-4 p-2 leading-snug"
+        class="mb-4 p-4 leading-snug"
       >
         <img
           alt=""
@@ -42,9 +43,8 @@ exports[`<DropTable/> matches snapshot 1`] = `
         />
          
         <p
-          class=""
+          class="-mt-3 text-center"
         >
-          Name: 
           Potato dress
         </p>
          
@@ -76,7 +76,7 @@ exports[`<DropTable/> matches snapshot 1`] = `
       />
       
       <div
-        class="mb-4 p-2 leading-snug"
+        class="mb-4 p-4 leading-snug"
       >
         <img
           alt=""
@@ -85,9 +85,8 @@ exports[`<DropTable/> matches snapshot 1`] = `
         />
          
         <p
-          class=""
+          class="-mt-3 text-center"
         >
-          Name: 
           Cat
         </p>
          
@@ -119,7 +118,7 @@ exports[`<DropTable/> matches snapshot 1`] = `
       />
       
       <div
-        class="mb-4 p-2 leading-snug"
+        class="mb-4 p-4 leading-snug"
       >
         <img
           alt=""
@@ -128,9 +127,8 @@ exports[`<DropTable/> matches snapshot 1`] = `
         />
          
         <p
-          class=""
+          class="-mt-3 text-center"
         >
-          Name: 
           Dog
         </p>
          

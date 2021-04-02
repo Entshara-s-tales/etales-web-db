@@ -20,9 +20,9 @@
 	</div>
 	<h3 class="text-center pr-10 pl-2 pt-2 pb-2">{unit.name}</h3>
 	{#each unit.dropTable as itemDrop, i}
-		<div class="mb-4 p-2 leading-snug">
+		<div class="mb-4 p-4 leading-snug">
 			<img class="m-auto pb-4" src="https://placekitten.com/80/80" alt="" />
-			<p class="">Name: {capitalize(itemDrop.item.name)}</p>
+			<p class="-mt-3 text-center">{capitalize(itemDrop.item.name)}</p>
 			<p class="">Type: {capitalize(itemDrop.item.type)}</p>
 			<p class="">State: {capitalize(itemDrop.item.state)}</p>
 			<p class="">Drop chance: {itemDrop.dropRate * 100}%</p>
