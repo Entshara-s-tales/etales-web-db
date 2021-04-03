@@ -1,0 +1,6 @@
+{
+  "jest.pathToJest": "",
+  "jest.restartJestOnSnapshotUpdate": true,
+  "jest.showCoverageOnLoad": true,
+  "jest.pathToConfig": "./jest.config.cjs"
+}

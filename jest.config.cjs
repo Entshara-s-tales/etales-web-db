@@ -2,6 +2,7 @@ const { pathsToModuleNameMapper } = require('ts-jest/utils');
 const { compilerOptions } = require('./tsconfig');
 const tsconfig = require('./tsconfig.json')
 
+process.env.JEST_ENV = "test";
 
 
 const tsPaths = pathsToModuleNameMapper(tsconfig.compilerOptions.paths, { prefix: '<rootDir>/' })
