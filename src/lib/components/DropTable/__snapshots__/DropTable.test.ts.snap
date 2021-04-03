@@ -7,14 +7,13 @@ exports[`<DropTable/> matches snapshot 1`] = `
       class="w-full"
     >
       <div
-        class="absolute right-0 top-0 "
+        class="absolute right-0 top-0"
       >
         <button
-          class="text-black rounded"
           type="button"
         >
           <div
-            class="w-10 h-10"
+            class="w-10 h-10 transform hover:rotate-45 transition-transform fill-current hover:text-gray-700"
             inverse="false"
             pulse="false"
             spin="false"
