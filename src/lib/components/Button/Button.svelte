@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { noop } from 'lodash';
 	export let type: 'link' | 'button' = 'link';
 	export let onClick: () => void = undefined;
 </script>
