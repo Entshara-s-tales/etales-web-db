@@ -9,8 +9,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "allowJs": true,
-    "checkJs": true,
+    "allowJs": false,
+    "checkJs": false,
     "paths": {
       "$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
       "$lib/*": ["./src/lib/*"]
