@@ -5,6 +5,7 @@
 const { basename } = require("path");
 const { execSync } = require("child_process");
 const svelte = require("svelte/compiler");
+const createCacheKeyFunction = require("@jest/create-cache-key-function")
 const { getSvelteConfig } = require("./svelteconfig.cjs");
 
 const transformer = (options = {}) => (source, filename) => {
@@ -53,4 +54,7 @@ const transformer = (options = {}) => (source, filename) => {
 
 exports.createTransformer = (options) => ({
   process: transformer(options),
+  getCacheKey: createCacheKeyFunction.default([
+    __filename,
+  ]),
 });
