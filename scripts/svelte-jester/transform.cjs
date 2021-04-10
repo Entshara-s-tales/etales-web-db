@@ -8,7 +8,7 @@ const svelte = require("svelte/compiler");
 const { getSvelteConfig } = require("./svelteconfig.cjs");
 
 const transformer = (options = {}) => (source, filename) => {
-  const { debug, compilerOptions, preprocess, rootMode, maxBuffer } = options;
+  const { debug, compilerOptions, preprocess, rootMode, maxBuffer, env } = options;
 
   let processedMap;
   let processedCode = source;
@@ -19,7 +19,7 @@ const transformer = (options = {}) => (source, filename) => {
     const preprocessResult = execSync(
       `node --unhandled-rejections=strict --abort-on-uncaught-exception "${ preprocessor }"`,
       {
-        env: { PATH: process.env.PATH, source, filename, svelteConfig },
+        env: { PATH: process.env.PATH, source, filename, svelteConfig, ...env },
         maxBuffer: maxBuffer || 10 * 1024 * 1024,
       }
     ).toString();

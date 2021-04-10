@@ -1,5 +1,4 @@
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
-const { compilerOptions } = require('./tsconfig');
 const tsconfig = require('./tsconfig.json')
 
 process.env.JEST_ENV = "test";
@@ -17,7 +16,11 @@ module.exports = {
     "^.+\\.svelte$": [
       "<rootDir>/scripts/svelte-jester/transform.cjs",
       {
-        "preprocess": true
+        "preprocess": true,
+        env: {
+          JEST_ENV: process.env.JEST_ENV,
+          NODE_ENV: process.env.NODE_ENV
+        }
       }
     ],
     "^.+\\.js$": "babel-jest",
